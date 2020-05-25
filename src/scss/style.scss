@@ -4,6 +4,7 @@ $header: #ECECEC;
 $border-disable: #cbcbcb;
 $disable-item: #a7a7a7;
 $disable-text: #686A70;
+$link: #426592;
 
 * {
     margin: 0px;
@@ -88,7 +89,6 @@ $disable-text: #686A70;
     height: 32px;
     width: 100%;
     max-width: 350px;
-    // min-width: 350px;
     border: 1px solid $border-disable;
     border-right: 0;
     border-radius: 3px 0 0 3px;
@@ -101,7 +101,6 @@ $disable-text: #686A70;
     &__item {
         display: flex;
         margin: 0 15px 0 0;
-        // fill: #000000;
     }
     &__item:hover {
         fill: $active-item;
@@ -153,7 +152,6 @@ $disable-text: #686A70;
     }
     &__link-box {
         display: flex;
-        // flex-direction: row-reverse;
         flex-direction: row;
         margin: 0 0 0 10%;
         left: auto;
@@ -202,9 +200,10 @@ $disable-text: #686A70;
 }
 
 .item {
-    margin: 0 0 10px 120px;
+    margin: 0 10px 10px 120px;
     display: flex;
     flex-direction: column;
+    
     &__triangle {
         border-color: black transparent;
         margin: 3px 0 0 4px;
@@ -222,6 +221,7 @@ $disable-text: #686A70;
         font-size: 12px;
     }
     &__content {
+        width: 150px;
         font-size: 12px;
         color: $disable-text;
         padding: 7px 0 6px 20px;
@@ -301,10 +301,38 @@ $disable-text: #686A70;
     }
 }
 
+.throw-line {
+    display: flex;
+    flex-direction: row;
+    // width: 100%;
+    &__action-box {
+        display: flex;
+        justify-content: flex-end;
+        width: 40%;
+    }
+    &__view {
+        font-size: 14px;
+        align-self: center;
+    }
+    &__lines {
+        background-image: url(https://i.alicdn.com/ae-search-ui/common/img/new-sd179874dc2.927cedb6.png);
+        background-position: 0 -469px;
+        width: 24px;
+        height: 18px;
+        margin: 17px 5px 0 10px;
+    }
+    &__grid {    
+        background-image: url(https://i.alicdn.com/ae-search-ui/common/img/new-sd179874dc2.927cedb6.png);
+        background-position: 0 -327px;
+        width: 24px;
+        height: 18px;
+        margin: 17px 5px 0 10px;
+    }
+}
+
 .category {
     display: flex;
-    border: 1.2px solid $border-disable;
-    width: 510px;
+    border: 1.1px solid $border-disable;
     border-radius: 2px;
     margin: 10px 20px;
     padding: 5px;
@@ -346,12 +374,85 @@ $disable-text: #686A70;
 .devices {
     display: flex;
     flex-direction: row;
-    margin: 10px 0 0 20px;
+    margin: 10px 30px 0 20px;
     border-top: 1px solid $border-disable;  
     flex-wrap: wrap;
     &__item {
         display: flex;
         flex-direction: column;
+        padding: 10px 20px;
+    }
+}
+.img-box {
+    margin: 10px 0 0 0;
+    &__img {
+        height: 200px;
+    }
+    &__text {
+        font-size: 14px;
+        color: $link;
+        padding: 3px 0 3px 40px;
+        background-color: $border-disable;
+    }
+}
+
+.title {
+    margin: 5px 0 0 0;
+    display: flex;
+    &__img {
+        height: 14px;
+    }
+    &__t {   
+        text-decoration: none;
+        font-size: 14px;
+        white-space: wrap;
+        width: 200px;
+        color: $link;
+    }
+}
+
+.cost {
+    display: flex;
+    flex-direction: column;
+    margin: 15px 0 0 0;
+    &__quantity {
+        font-size: 12px;
+        color: $disable-text;
+
+    }
+    &__active {
+        color: $active-item;
+        font-size: 16px;
+    }
+    &__price {
+        display: flex;
+        flex-direction: row;
+        font-size: 12px;
+        text-decoration: none;
+        color: $active-item;
+    }
+    &__discount {      
+        margin: 0 6px 0 0;
+        flex-direction: row;
+        font-size: 14px;
+        text-decoration: line-through;
+        color: $disable-text;
+    }
+    &__comments {
+        display: flex;
+        flex-direction: row;
+    }
+    &__stars {
+        width: 76px;
+        height: 14px;
+        background-image: url(https://i.alicdn.com/ae-search-ui/common/img/new-sd179874dc2.927cedb6.png);
+        background-position: 0px -1077px;
+        margin: 4px 0 0 0;
+    }
+    &__text {
+        font-size: 12px;
+        margin: 4px 0 0 2px;
+        color: $disable-text;
     }
 }
 
@@ -464,13 +565,11 @@ $disable-text: #686A70;
         &__item {
             display: flex;
             margin: 0 0 0 0;
-            // fill: #000000;
         }
     }
     .nav-down {
         &__menu {
             margin: 0 0 0 160px;
-            // display: none;
         }
         &__item {
             margin: 0 0 0 50%;
