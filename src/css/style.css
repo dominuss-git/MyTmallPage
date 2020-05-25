@@ -185,6 +185,11 @@
   height: 100%;
   border-right: 1px solid #cbcbcb;
 }
+.main__right {
+  display: flex;
+  flex-direction: column;
+}
+
 .item {
   margin: 0 0 10px 120px;
   display: flex;
@@ -219,6 +224,124 @@
 }
 .item__header:hover {
   cursor: pointer;
+}
+
+.img-block {
+  padding: 10px 0 0 20px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+.img-block__item {
+  width: 50px;
+  height: 28px;
+  margin: 0 3px 5px 3px;
+  padding: 0px 10px;
+  border: 1px solid #cbcbcb;
+  border-radius: 3px;
+}
+.img-block__item:hover {
+  cursor: pointer;
+}
+
+.filters {
+  display: flex;
+  flex-wrap: nowrap;
+  padding: 10px 0 0 23px;
+}
+.filters__cost {
+  font-size: 14px;
+}
+.filters__input {
+  width: 40px;
+  height: 20px;
+  border: 1px solid #cbcbcb;
+  border-radius: 2px;
+  outline: none;
+  font-size: 9px;
+}
+.filters__checkbox {
+  width: 15px;
+  height: 15px;
+  margin: 3.5px 0 0 20px;
+  border: 1px solid #cbcbcb;
+  border-radius: 2px;
+}
+.filters__checkbox {
+  cursor: pointer;
+}
+.filters__starts {
+  width: 76px;
+  height: 14px;
+  background-image: url(https://i.alicdn.com/ae-search-ui/common/img/new-sd179874dc2.927cedb6.png);
+  background-position: 0px -1077px;
+  margin: 4px 0 0 5px;
+}
+.filters__starts:hover {
+  cursor: pointer;
+}
+.filters__text {
+  font-size: 14px;
+  margin: 2px 0 0 0;
+  color: #686A70;
+}
+.filters__text:hover {
+  cursor: pointer;
+  color: #FF9D55;
+}
+
+.category {
+  display: flex;
+  border: 1.2px solid #cbcbcb;
+  width: 510px;
+  border-radius: 2px;
+  margin: 10px 20px;
+  padding: 5px;
+  border-bottom: 1px solid #cbcbcb;
+}
+.category__item {
+  font-size: 14px;
+  padding: 0 10px 0 10px;
+  border-right: 1px solid #a7a7a7;
+}
+.category__item:hover {
+  cursor: pointer;
+}
+.category__triangle {
+  position: relative;
+  display: inline-block;
+  margin: 0 0 0 3px;
+  width: 10px;
+  height: 10px;
+  background-image: url(https://i.alicdn.com/ae-search-ui/common/img/new-sd179874dc2.927cedb6.png);
+  background-position: 0px -263px;
+}
+.category__last {
+  border: none;
+}
+.category__row {
+  position: relative;
+  display: inline-block;
+  margin-left: 3px;
+  width: 10px;
+  height: 13px;
+  background-image: url(https://i.alicdn.com/ae-search-ui/common/img/new-sd179874dc2.927cedb6.png);
+  background-position: 0px -206px;
+  background-repeat: no-repeat;
+  top: 3px;
+  left: 0px;
+}
+
+.devices {
+  display: flex;
+  flex-direction: row;
+  margin: 10px 0 0 20px;
+  border-top: 1px solid #cbcbcb;
+  flex-wrap: wrap;
+}
+.devices__item {
+  display: flex;
+  flex-direction: column;
 }
 
 @media (max-width: 1150px) {
@@ -279,6 +402,15 @@
     width: 100px;
   }
   .nav-down__menu {
+    display: none;
+  }
+}
+@media (max-width: 630px) {
+  .img-block__item {
+    display: none;
+  }
+
+  .main__left {
     display: none;
   }
 }
