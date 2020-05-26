@@ -389,7 +389,7 @@ $link: #426592;
     &__text1 {
         font-size: 12px;
         color: $disable-text;
-    }&__text {
+    }&__text2 {
         font-size: 12px;
         color: $disable-text;
     }
@@ -465,6 +465,14 @@ $link: #426592;
         margin: 4px 0 0 2px;
         color: $disable-text;
     }
+}
+
+.my-logo {
+    width: 200px;
+    height: auto;
+}
+.my-logo:hover {
+    cursor: pointer;
 }
 
 @media(max-width: 1250px) {

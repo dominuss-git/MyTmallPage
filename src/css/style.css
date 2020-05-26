@@ -382,7 +382,7 @@
   font-size: 12px;
   color: #686A70;
 }
-.devices__text {
+.devices__text2 {
   font-size: 12px;
   color: #686A70;
 }
@@ -457,6 +457,15 @@
   font-size: 12px;
   margin: 4px 0 0 2px;
   color: #686A70;
+}
+
+.my-logo {
+  width: 200px;
+  height: auto;
+}
+
+.my-logo:hover {
+  cursor: pointer;
 }
 
 @media (max-width: 1250px) {

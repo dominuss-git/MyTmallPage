@@ -28,3 +28,7 @@ $('.throw-line__grid').click(function(e) {
     $('.devices__text1').text("");
     $('.devices__text2').text("");
 })
+
+$('.my-logo').click(function(e) {
+    window.open("https://github.com/dominuss-git");
+})
