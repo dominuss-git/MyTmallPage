@@ -473,7 +473,7 @@
     width: 30%;
   }
 }
-@media (max-width: 1150px) {
+@media (max-width: 1200px) {
   .icon__text {
     font-size: 0px;
   }
@@ -574,6 +574,9 @@
     margin: 30px 0 0 0px;
   }
 
+  .nav-up {
+    width: 70%;
+  }
   .nav-up__logo {
     padding: 0 0 0 20px;
   }
@@ -606,6 +609,10 @@
 
   .filters {
     flex-direction: column;
+  }
+
+  .search-info {
+    display: none;
   }
 }
 
