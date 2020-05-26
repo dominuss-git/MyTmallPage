@@ -274,7 +274,7 @@
 .filters__starts {
   width: 76px;
   height: 14px;
-  background-image: url(https://i.alicdn.com/ae-search-ui/common/img/new-sd179874dc2.927cedb6.png);
+  background-image: url("https://i.alicdn.com/ae-search-ui/common/img/new-sd179874dc2.927cedb6.png");
   background-position: 0px -1077px;
   margin: 4px 0 0 5px;
 }
@@ -311,12 +311,18 @@
   height: 18px;
   margin: 17px 5px 0 10px;
 }
+.throw-line__lines:hover {
+  cursor: pointer;
+}
 .throw-line__grid {
   background-image: url(https://i.alicdn.com/ae-search-ui/common/img/new-sd179874dc2.927cedb6.png);
   background-position: 0 -327px;
   width: 24px;
   height: 18px;
   margin: 17px 5px 0 10px;
+}
+.throw-line__grid:hover {
+  cursor: pointer;
 }
 
 .category {
@@ -371,6 +377,14 @@
   display: flex;
   flex-direction: column;
   padding: 10px 20px;
+}
+.devices__text1 {
+  font-size: 12px;
+  color: #686A70;
+}
+.devices__text {
+  font-size: 12px;
+  color: #686A70;
 }
 
 .img-box {
@@ -445,6 +459,11 @@
   color: #686A70;
 }
 
+@media (max-width: 1250px) {
+  .throw-line__action-box {
+    width: 30%;
+  }
+}
 @media (max-width: 1150px) {
   .icon__text {
     font-size: 0px;
@@ -463,6 +482,26 @@
 
   .nav-down__link-box {
     display: none;
+  }
+
+  .throw-line {
+    flex-direction: column;
+  }
+  .throw-line__action-box {
+    display: none;
+  }
+  .throw-line__lines {
+    margin: 7px 5px 0 10px;
+  }
+  .throw-line__grid {
+    margin: 7px 5px 0 10px;
+  }
+
+  .category {
+    width: 410px;
+  }
+  .category__item {
+    font-size: 10px;
   }
 }
 @media (max-width: 750px) {
@@ -505,17 +544,17 @@
   .nav-down__menu {
     display: none;
   }
-}
-@media (max-width: 630px) {
-  .img-block__item {
-    display: none;
-  }
 
   .main__left {
     display: none;
   }
 }
-@media (max-width: 430px) {
+@media (max-width: 630px) {
+  .img-block__item {
+    display: none;
+  }
+}
+@media (max-width: 470px) {
   .header__logo {
     padding: 0 0 0 10px;
   }
@@ -550,6 +589,14 @@
   }
   .nav-down__item {
     margin: 0 0 0 50%;
+  }
+
+  .throw-line {
+    display: none;
+  }
+
+  .filters {
+    flex-direction: column;
   }
 }
 

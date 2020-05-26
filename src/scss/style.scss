@@ -129,7 +129,6 @@ $link: #426592;
         width: 17px;
         height: 17px;
         background-size: cover;
-        // margin: -30px 0 0 0;
     }
     &__menu:hover {
         cursor: pointer;
@@ -283,7 +282,7 @@ $link: #426592;
     &__starts {
         width: 76px;
         height: 14px;
-        background-image: url(https://i.alicdn.com/ae-search-ui/common/img/new-sd179874dc2.927cedb6.png);
+        background-image: url("https://i.alicdn.com/ae-search-ui/common/img/new-sd179874dc2.927cedb6.png");
         background-position: 0px -1077px;
         margin: 4px 0 0 5px;
     }
@@ -304,7 +303,6 @@ $link: #426592;
 .throw-line {
     display: flex;
     flex-direction: row;
-    // width: 100%;
     &__action-box {
         display: flex;
         justify-content: flex-end;
@@ -321,12 +319,18 @@ $link: #426592;
         height: 18px;
         margin: 17px 5px 0 10px;
     }
+    &__lines:hover {
+        cursor: pointer;
+    }
     &__grid {    
         background-image: url(https://i.alicdn.com/ae-search-ui/common/img/new-sd179874dc2.927cedb6.png);
         background-position: 0 -327px;
         width: 24px;
         height: 18px;
         margin: 17px 5px 0 10px;
+    }
+    &__grid:hover {
+        cursor: pointer;
     }
 }
 
@@ -381,6 +385,13 @@ $link: #426592;
         display: flex;
         flex-direction: column;
         padding: 10px 20px;
+    }
+    &__text1 {
+        font-size: 12px;
+        color: $disable-text;
+    }&__text {
+        font-size: 12px;
+        color: $disable-text;
     }
 }
 .img-box {
@@ -456,6 +467,14 @@ $link: #426592;
     }
 }
 
+@media(max-width: 1250px) {
+    .throw-line {
+        &__action-box {
+            width: 30%;
+        }
+    }
+}
+
 @media(max-width: 1150px) {
     .icon {
         &__text {
@@ -478,6 +497,24 @@ $link: #426592;
     .nav-down {
         &__link-box {
             display: none;
+        }
+    }
+    .throw-line {
+        flex-direction: column;
+        &__action-box {
+            display: none;
+        }
+        &__lines {
+            margin: 7px 5px 0 10px;
+        }
+        &__grid {    
+            margin: 7px 5px 0 10px;
+        }
+    }
+    .category {
+        width: 410px;
+        &__item {
+            font-size: 10px;
         }
     }
 }
@@ -521,6 +558,12 @@ $link: #426592;
             display: none;
         }
     }
+    .main {
+        &__left {
+            display: none;
+        }
+    }
+
 }
 
 @media(max-width: 630px) {
@@ -529,14 +572,10 @@ $link: #426592;
             display: none;
         }
     }
-    .main {
-        &__left {
-            display: none;
-        }
-    }
+    
 }
 
-@media(max-width: 430px) {
+@media(max-width: 470px) {
     .header {
         &__logo {
             padding: 0 0 0 10px;
@@ -574,5 +613,11 @@ $link: #426592;
         &__item {
             margin: 0 0 0 50%;
         }
+    }
+    .throw-line {
+        display: none;
+    }
+    .filters {
+        flex-direction: column;
     }
 }
