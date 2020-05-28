@@ -42,6 +42,8 @@
 
 .location {
   fill: #a7a7a7;
+}
+.location__text {
   color: #a7a7a7;
   font-size: 12px;
 }
@@ -119,6 +121,7 @@
 .nav-down__menu {
   margin: 0 10px 0 140px;
   background-image: url("/src/img/open-menu.svg");
+  background-size: 30px;
   width: 17px;
   height: 17px;
   background-size: cover;
@@ -387,8 +390,30 @@
   color: #686A70;
 }
 
+.devices-line {
+  display: flex;
+  flex-direction: column;
+  margin: 10px 30px 0 20px;
+  border-top: 1px solid #cbcbcb;
+  flex-wrap: wrap;
+}
+.devices-line__item {
+  display: flex;
+  flex-direction: row;
+  padding: 10px 20px;
+}
+.devices-line__text1 {
+  font-size: 12px;
+  color: #686A70;
+}
+.devices-line__text2 {
+  font-size: 12px;
+  color: #686A70;
+}
+
 .img-box {
   margin: 10px 0 0 0;
+  width: 200px;
 }
 .img-box__img {
   height: 200px;
@@ -411,13 +436,23 @@
   text-decoration: none;
   font-size: 14px;
   white-space: wrap;
+  padding: 0;
   width: 200px;
+  color: #426592;
+}
+.title__t-line {
+  text-decoration: none;
+  font-size: 14px;
+  white-space: wrap;
+  padding: 15px 0 0 0;
+  width: 400px;
   color: #426592;
 }
 
 .cost {
   display: flex;
   flex-direction: column;
+  padding: 0;
   margin: 15px 0 0 0;
 }
 .cost__quantity {
@@ -454,6 +489,51 @@
   margin: 4px 0 0 0;
 }
 .cost__text {
+  font-size: 12px;
+  margin: 4px 0 0 2px;
+  color: #686A70;
+}
+
+.cost-line {
+  display: flex;
+  flex-direction: column;
+  padding: 35px 0 0 0;
+  margin: 15px 0 0 0;
+}
+.cost-line__quantity {
+  font-size: 12px;
+  color: #686A70;
+}
+.cost-line__active {
+  color: #FE0E41;
+  font-size: 16px;
+}
+.cost-line__price {
+  display: flex;
+  flex-direction: row;
+  font-size: 12px;
+  text-decoration: none;
+  color: #FE0E41;
+}
+.cost-line__discount {
+  margin: 0 6px 0 0;
+  flex-direction: row;
+  font-size: 14px;
+  text-decoration: line-through;
+  color: #686A70;
+}
+.cost-line__comments {
+  display: flex;
+  flex-direction: row;
+}
+.cost-line__stars {
+  width: 76px;
+  height: 14px;
+  background-image: url(https://i.alicdn.com/ae-search-ui/common/img/new-sd179874dc2.927cedb6.png);
+  background-position: 0px -1077px;
+  margin: 4px 0 0 0;
+}
+.cost-line__text {
   font-size: 12px;
   margin: 4px 0 0 2px;
   color: #686A70;

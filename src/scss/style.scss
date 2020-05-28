@@ -50,8 +50,10 @@ $link: #426592;
 
 .location {
     fill: $disable-item;
-    color: $disable-item;
-    font-size: 12px;
+    &__text {
+        color: $disable-item;
+        font-size: 12px;
+    }
 }
 
 .nav-up {
@@ -126,6 +128,7 @@ $link: #426592;
     &__menu {
         margin: 0 10px 0 140px;
         background-image: url("/src/img/open-menu.svg");
+        background-size: 30px;
         width: 17px;
         height: 17px;
         background-size: cover;
@@ -389,13 +392,37 @@ $link: #426592;
     &__text1 {
         font-size: 12px;
         color: $disable-text;
-    }&__text2 {
+    }
+    &__text2 {
         font-size: 12px;
         color: $disable-text;
     }
 }
+
+.devices-line {
+    display: flex;
+    flex-direction: column;
+    margin: 10px 30px 0 20px;
+    border-top: 1px solid $border-disable;  
+    flex-wrap: wrap;
+    &__item {
+        display: flex;
+        flex-direction: row;
+        padding: 10px 20px;
+    }
+    &__text1 {
+        font-size: 12px;
+        color: $disable-text;
+    }
+    &__text2 {
+        font-size: 12px;
+        color: $disable-text;
+    }
+}
+
 .img-box {
     margin: 10px 0 0 0;
+    width: 200px;
     &__img {
         height: 200px;
     }
@@ -417,7 +444,16 @@ $link: #426592;
         text-decoration: none;
         font-size: 14px;
         white-space: wrap;
+        padding: 0;
         width: 200px;
+        color: $link;
+    }
+    &__t-line {   
+        text-decoration: none;
+        font-size: 14px;
+        white-space: wrap;
+        padding: 15px 0 0 0;
+        width: 400px;
         color: $link;
     }
 }
@@ -425,6 +461,53 @@ $link: #426592;
 .cost {
     display: flex;
     flex-direction: column;
+    padding: 0;
+    margin: 15px 0 0 0;
+    &__quantity {
+        font-size: 12px;
+        color: $disable-text;
+
+    }
+    &__active {
+        color: $active-item;
+        font-size: 16px;
+    }
+    &__price {
+        display: flex;
+        flex-direction: row;
+        font-size: 12px;
+        text-decoration: none;
+        color: $active-item;
+    }
+    &__discount {      
+        margin: 0 6px 0 0;
+        flex-direction: row;
+        font-size: 14px;
+        text-decoration: line-through;
+        color: $disable-text;
+    }
+    &__comments {
+        display: flex;
+        flex-direction: row;
+    }
+    &__stars {
+        width: 76px;
+        height: 14px;
+        background-image: url(https://i.alicdn.com/ae-search-ui/common/img/new-sd179874dc2.927cedb6.png);
+        background-position: 0px -1077px;
+        margin: 4px 0 0 0;
+    }
+    &__text {
+        font-size: 12px;
+        margin: 4px 0 0 2px;
+        color: $disable-text;
+    }
+}
+
+.cost-line {
+    display: flex;
+    flex-direction: column;
+    padding: 35px 0 0 0;
     margin: 15px 0 0 0;
     &__quantity {
         font-size: 12px;
@@ -471,6 +554,7 @@ $link: #426592;
     width: 200px;
     height: auto;
 }
+
 .my-logo:hover {
     cursor: pointer;
 }

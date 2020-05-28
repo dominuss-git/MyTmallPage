@@ -2,12 +2,14 @@ import $ from 'jquery'
 import './css/style.css'
 
 $('.throw-line__lines').click(function(e) {
-    $('.devices').css('flex-direction', 'column');
-    $('.img-box').css('width', '200px');
-    $('.devices__item').css('flex-direction', 'row');
-    $('.title__t').css('width', '400px');
-    $('.title__t').css('padding', '15px 0 0 0');
-    $('.cost').css('padding', '35px 0 0 0');
+    $('.devices__item').addClass("devices-line__item");
+    $('.devices__item').removeClass("devices__item");
+    $('.devices').addClass("devices-line");
+    $('.devices').removeClass("devices");
+    $('.title__t').addClass("title__t-line");
+    $('.title__t').removeClass("title__t");
+    $('.cost').addClass("cost-line");
+    $('.cost').removeClass("cost");
     $('.devices__text1').text("Доставка из: Россия");
     $('.devices__text2').text("Приблизительно: дн.");
 })
@@ -17,14 +19,16 @@ $( window ).resize(function() {
         $('.throw-line__grid').click();
     }
 });
-
+''
 $('.throw-line__grid').click(function(e) {
-    $('.devices').css('flex-direction', 'row');
-    $('.img-box').css('width', '200px');
-    $('.devices__item').css('flex-direction', 'column');
-    $('.title__t').css('width', '200px');
-    $('.title__t').css('padding', '0');
-    $('.cost').css('padding', '0');
+    $('.devices-line__item').addClass("devices__item");
+    $('.devices-line__item').removeClass("devices-line__item");
+    $('.devices-line').addClass("devices");
+    $('.devices-line').removeClass("devices-line");
+    $('.title__t-line').addClass("title__t");
+    $('.title__t-line').removeClass("title__t-line");
+    $('.cost-line').addClass("cost");
+    $('.cost-line').removeClass("cost-line");
     $('.devices__text1').text("");
     $('.devices__text2').text("");
 })
