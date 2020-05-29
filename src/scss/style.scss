@@ -379,44 +379,45 @@ $link: #426592;
 }
 
 .devices {
-    display: flex;
-    flex-direction: row;
-    margin: 10px 30px 0 20px;
-    border-top: 1px solid $border-disable;  
-    flex-wrap: wrap;
-    &__item {
+    &_grid {
+        display: flex;
+        flex-direction: row;
+        margin: 10px 30px 0 20px;
+        border-top: 1px solid $border-disable;  
+        flex-wrap: wrap;
+        &__item {
         display: flex;
         flex-direction: column;
         padding: 10px 20px;
+        }
+        &__text1 {
+            font-size: 12px;
+            color: $disable-text;
+        }
+        &__text2 {
+            font-size: 12px;
+            color: $disable-text;
+        }
     }
-    &__text1 {
-        font-size: 12px;
-        color: $disable-text;
-    }
-    &__text2 {
-        font-size: 12px;
-        color: $disable-text;
-    }
-}
-
-.devices-line {
-    display: flex;
-    flex-direction: column;
-    margin: 10px 30px 0 20px;
-    border-top: 1px solid $border-disable;  
-    flex-wrap: wrap;
-    &__item {
+    &_line {
         display: flex;
-        flex-direction: row;
-        padding: 10px 20px;
-    }
-    &__text1 {
-        font-size: 12px;
-        color: $disable-text;
-    }
-    &__text2 {
-        font-size: 12px;
-        color: $disable-text;
+        flex-direction: column;
+        margin: 10px 30px 0 20px;
+        border-top: 1px solid $border-disable;  
+        flex-wrap: wrap;
+        &__item {
+            display: flex;
+            flex-direction: row;
+            padding: 10px 20px;
+        }
+        &__text1 {
+            font-size: 12px;
+            color: $disable-text;
+        }
+        &__text2 {
+            font-size: 12px;
+            color: $disable-text;
+        }
     }
 }
 
