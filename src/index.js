@@ -11,7 +11,7 @@ $('.throw-line__lines').click(function(e) {
     $('.cost').addClass("cost-line");
     $('.cost').removeClass("cost");
     $('.devices__text1').text("Доставка из: Россия");
-    $('.devices__text2').text("Приблизительно: днd.");
+    $('.devices__text2').text("Приблизительно: дн.");
 })
 
 $( window ).resize(function() {
