@@ -381,14 +381,6 @@
   flex-direction: column;
   padding: 10px 20px;
 }
-.devices_grid__text1 {
-  font-size: 12px;
-  color: #686A70;
-}
-.devices_grid__text2 {
-  font-size: 12px;
-  color: #686A70;
-}
 .devices_line {
   display: flex;
   flex-direction: column;
@@ -401,11 +393,11 @@
   flex-direction: row;
   padding: 10px 20px;
 }
-.devices_line__text1 {
+.devices__text1 {
   font-size: 12px;
   color: #686A70;
 }
-.devices_line__text2 {
+.devices__text2 {
   font-size: 12px;
   color: #686A70;
 }
